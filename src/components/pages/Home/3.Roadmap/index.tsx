@@ -1,6 +1,5 @@
-import Card, { ParagrafCard } from '@/components/common/Card'
+import { ParagrafCard } from '@/components/common/Card'
 import Heading3d from '@/components/common/Headings'
-import React from 'react'
 import bg from '~/roadmap/bg.png'
 
 const Roadmap = () => {

@@ -1,5 +1,4 @@
 import React from 'react'
-import { twMerge } from 'tailwind-merge'
 
 const Heading3d = ({ className, children, isMain }: { isMain?: boolean } & React.HTMLAttributes<HTMLHeadingElement>) => {
 	if (isMain) {
