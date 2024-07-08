@@ -5,7 +5,7 @@ import Features from "./components/pages/Home/4.Features"
 
 function App() {
   return (
-    <div className="bg-lightBlue">
+    <div className="bg-lightBlue overflow-x-clip">
       <Hero />
       <HeroAfter />
       <Tokenomics />
