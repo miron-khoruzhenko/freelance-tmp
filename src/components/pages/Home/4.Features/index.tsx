@@ -82,7 +82,7 @@ const Footer = () => {
 
 			</Card>
 
-			<div className="flex justify-between w-full">
+			<div className="lg:hidden flex justify-between w-full">
 
 				<div className="flex items-center justify-center gap-2">
 					<Card className="bg-[#FFC5C5] size-[45px]" />
@@ -101,7 +101,7 @@ const Footer = () => {
 				</div>
 			</div>
 
-			<Card>
+			<Card className='block lg:hidden'>
 				<ul className="grid grid-cols-3 text-center text-lg font-bold">
 					<li className="">Tokenomics</li>
 					<li className="">Roadmap</li>
@@ -109,7 +109,7 @@ const Footer = () => {
 				</ul>
 			</Card>
 
-			<Card className="bg-[#79E7FF] font-bold text-[22px] flex items-center justify-center whitespace-nowrap">
+			<Card className="lg:hidden bg-[#79E7FF] font-bold text-[22px] flex items-center justify-center whitespace-nowrap">
 				BUY NOW
 			</Card>
 
