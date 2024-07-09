@@ -17,12 +17,12 @@ import social_2 from '~/navbar/icon2.svg'
 
 const Features = () => {
 	return (
-		<div className='bg-features bg-top bg-no-repeat bg-cover min-h-screen relative z-30 pt-96'>
-			<div className="container mx-auto flex flex-col justify-center items-center">
+		<div className='bg-features bg-top bg-no-repeat bg-cover min-h-screen relative z-30 pt-96 px-4'>
+			<div className="container mx-auto flex flex-col justify-center items-center pt-12 lg:pt-0">
 				<Heading3d className=''>FEATURES</Heading3d>
 				<p className="text-[20px] text-center my-6">Lorem Ipsum is simply dummy text of the <br /> printing and typesetting industry.</p>
 
-				<div className="flex justify-center items-center gap-[30px] mt-16 mb-28">
+				<div className="flex flex-col lg:flex-row justify-center items-center -gap-3 lg:gap-[30px] mt-16 mb-28 px-4">
 					<PhotoCard order={0} icon={icon1} img={img1} className='rotate-[-6deg]' text='Lorem Ipsum is simply dummy text of the printing and typesetting industry' />
 					<PhotoCard order={1} icon={icon2} img={img2} className='rotate-[6deg]' text='Lorem Ipsum is simply dummy text of the printing and typesetting industry' />
 					<PhotoCard order={2} icon={icon3} img={img3} className='rotate-[-6deg]' text='Lorem Ipsum is simply dummy text of the printing and typesetting industry' />
@@ -53,8 +53,8 @@ const PhotoCard = ({ img, icon, text, order, className = '' }: { order: number, 
 const Footer = () => {
 
 	return (
-		<nav className="flex gap-8 w-full mb-8">
-			<Card className="flex justify-between items-center w-full px-[30px] py-[45px]">
+		<nav className="flex flex-col lg:flex-row gap-[20px] lg:gap-8 w-full mb-8 px-4">
+			<Card className="hidden lg:flex justify-between items-center w-full px-[30px] py-[45px]">
 				<div className="flex items-center justify-center gap-2">
 					<Card className="bg-[#AED6FB] size-[45px]" />
 					<div className="flex flex-col justify-center h-full">
@@ -81,6 +81,38 @@ const Footer = () => {
 				</div>
 
 			</Card>
+
+			<div className="flex justify-between w-full">
+
+				<div className="flex items-center justify-center gap-2">
+					<Card className="bg-[#FFC5C5] size-[45px]" />
+					<div className="flex flex-col justify-center h-full">
+						<h3 className=" text-[20px] font-bold tracking-[-1.6px] leading-[1]">CLOUD</h3>
+						<span className="text-[20px] font-light tracking-[-1.4px] leading-[1]">coin</span>
+					</div>
+				</div>
+
+
+				<div className="flex gap-4">
+					<Card className="bg-[#CFFFD7] p-0 size-[45px] inline-flex items-center justify-center">
+						<img src={social_1} alt="" className="invert size-[18px]" /></Card>
+					<Card className="bg-[#CFFFD7] p-0 size-[45px] inline-flex items-center justify-center">
+						<img src={social_2} alt="" className="invert size-[18px]" /></Card>
+				</div>
+			</div>
+
+			<Card>
+				<ul className="grid grid-cols-3 text-center text-lg font-bold">
+					<li className="">Tokenomics</li>
+					<li className="">Roadmap</li>
+					<li className="">Features</li>
+				</ul>
+			</Card>
+
+			<Card className="bg-[#79E7FF] font-bold text-[22px] flex items-center justify-center whitespace-nowrap">
+				BUY NOW
+			</Card>
+
 		</nav>
 	)
 }

@@ -26,7 +26,13 @@ const Hero = () => {
 						Lorem Ipsum is simply dummy text of the <br /> printing and typesetting industry.
 					</ParagrafCard>
 
-					<ParagrafCard title="$CLOUD CONTRACT ADDRESS" className="max-w-full w-full lg:w-auto text-left lg:absolute lg:rotate-[-9deg] top-1/2 left-1/2  lg:translate-y-full lg:-translate-x-[calc(135%)] z-10 whitespace-nowrap">
+					<ParagrafCard 
+						title="$CLOUD CONTRACT ADDRESS" 
+						className="max-w-full w-full lg:w-auto text-left lg:absolute lg:rotate-[-9deg] top-1/2 left-1/2  lg:translate-y-full lg:-translate-x-[calc(135%)] z-10 whitespace-nowrap cursor-pointer"
+						onClick={
+							() => navigator.clipboard.writeText('0xf6e932ca12afa26665dc4dde7e27be02a7c02e50')
+						}
+					>
 						0xf6e932ca12afa26665dc4dde7e27be02a7c02e50 <img src="/hero/copy.svg" alt="" className="inline-block lg:ml-4" />
 					</ParagrafCard>
 
@@ -57,7 +63,7 @@ const Hero = () => {
 
 const Navbar = () => {
 
-	const [isModalOpen, SetIsModalOpen] = useState(true)
+	const [isModalOpen, SetIsModalOpen] = useState(false)
 
 	return (
 		<nav className="flex gap-8 relative">

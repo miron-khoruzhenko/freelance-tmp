@@ -11,7 +11,7 @@ const Heading3d = ({ className, children, isMain }: { isMain?: boolean } & React
 
 	return(
 		<h2 
-			className={"text-stroke-normal uppercase font-['Cherry_Bomb_One'] text-[50px] text-white " + className}
+			className={"text-stroke-normal uppercase font-['Cherry_Bomb_One'] text-[30px] lg:text-[50px] text-white " + className}
 			style={{}}
 			>
 			{/* <span className="text-stroke">{children}</span> */}
